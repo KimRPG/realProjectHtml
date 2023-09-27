@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form action="">
+        <label>이름: </label>
+        <input type="text"> <br />
+        <label> 성별 </label>
+        <input type="radio" value="woman"> 여자 
+        <input type="radio" value="man"> 남자<br />
+        <label> 취미: </label>
+        <input type="checkbox" name="hobby1" value="1"> 농구
+        <input type="checkbox" name="hobby2" value="2"> 축구
+        <input type="checkbox" name="hobby3" value="3"> 야구 
+        <input type="checkbox" name="hobby4" value="4"> 공부<br />
+        <label> 입학년도: </label>
+        <input type="number" id="year" name="year" min="1998" max="2023"><br/>
+         전공  : <select name="order" form="myForm">
+            <option value="computer">전산전자공학부</option>
+            <option value="law">법학부</option>
+            <option value="science">생명공학부 </option>
+            <option value="communication">커뮤니케이션학부</option>
+        </select> <br/>
+        <label for="span"> 하고 싶은 말 </label> <br/>
+        <textarea name="opinion" form="myForm" cols="30" rows="5"></textarea> <br />
+        <input type="submit">
+    </form>
+</body>
+</html>
